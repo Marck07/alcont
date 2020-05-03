@@ -30,4 +30,48 @@ $alcont-theme: mat-light-theme($alcont-primary, $alcont-accent, $alcont-warn);
 @import 'gridlex';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: "Work Sans",sans-serif!important; }
+
+.owl-carousel.owl-loaded {
+  height: 100%;
+}
+.owl-carousel .owl-stage-outer {
+  height: 100%;
+}
+
+owl-stage div {
+  height: 100%;
+}
+.owl-carousel .owl-stage {
+  height: 100%!important;
+}
+
+.owl-carousel .owl-item {
+  height: 100%;
+}
+.owl-carousel .owl-item img {
+  margin: 0!important;
+  height: 100%;
+}
+
+.zoom div img {
+   transform: scale(1.5);
+}
+.owl-theme .owl-nav {
+  background: rgba(0, 0, 0, 0);
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.owl-carousel .owl-item::before {
+  content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3d4246;
+    opacity: 0.46;
+    z-index: 2;
+}
