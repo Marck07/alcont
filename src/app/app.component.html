@@ -1,463 +1,145 @@
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-  <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-  <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-  <!-- * * * * * * * to get started with your project! * * * * * * * * -->
-  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-  <style>
-    :host {
-      font-family:  "Work Sans", sans-serif, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      font-size: 14px;
-      color: #333;
-      box-sizing: border-box;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 8px 0;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .spacer {
-      flex: 1;
-    }
-
-    .parent-container {
-      /*position: absolute;*/
-      /*top: 0;*/
-      /*left: 0;*/
-      /*right: 0;*/
-      background-color: #7796a8;
-      color: white;
-      font-weight: 600;
-    }
-
-    .parent-container img {
-      margin: 0 16px;
-    }
-
-    .parent-container #twitter-logo {
-      height: 40px;
-      margin: 0 16px;
-    }
-
-    .parent-container #twitter-logo:hover {
-      opacity: 0.8;
-    }
-
-    .content {
-      display: flex;
-      margin: 82px auto 32px;
-      padding: 0 16px;
-      max-width: 960px;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    svg.material-icons {
-      height: 24px;
-      width: auto;
-    }
-
-    svg.material-icons:not(:last-child) {
-      margin-right: 8px;
-    }
-
-    .card svg.material-icons path {
-      fill: #888;
-    }
-
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 16px;
-    }
-
-    .card {
-      border-radius: 4px;
-      border: 1px solid #eee;
-      background-color: #fafafa;
-      height: 40px;
-      width: 200px;
-      margin: 0 8px 16px;
-      padding: 16px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.2s ease-in-out;
-      line-height: 24px;
-    }
-
-    .card-container .card:not(:last-child) {
-      margin-right: 0;
-    }
-
-    .card.card-small {
-      height: 16px;
-      width: 168px;
-    }
-
-    .card-container .card:not(.highlight-card) {
-      cursor: pointer;
-    }
-
-    .card-container .card:not(.highlight-card):hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    }
-
-    .card-container .card:not(.highlight-card):hover .material-icons path {
-      fill: rgb(105, 103, 103);
-    }
-
-    .card.highlight-card {
-      background-color: #1976d2;
-      color: white;
-      font-weight: 600;
-      border: none;
-      width: auto;
-      min-width: 30%;
-      position: relative;
-    }
-
-    .card.card.highlight-card span {
-      margin-left: 60px;
-    }
-
-    svg#rocket {
-      width: 80px;
-      position: absolute;
-      left: -10px;
-      top: -24px;
-    }
-
-    svg#rocket-smoke {
-      height: calc(100vh - 95px);
-      position: absolute;
-      top: 10px;
-      right: 180px;
-      z-index: -10;
-    }
-
-    a,
-    a:visited,
-    a:hover {
-      color: #1976d2;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #125699;
-    }
-
-    .terminal {
-      position: relative;
-      width: 80%;
-      max-width: 600px;
-      border-radius: 6px;
-      padding-top: 45px;
-      margin-top: 8px;
-      overflow: hidden;
-      background-color: rgb(15, 15, 16);
-    }
-
-    .terminal::before {
-      content: "\2022 \2022 \2022";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background: rgb(58, 58, 58);
-      color: #c2c3c4;
-      width: 100%;
-      font-size: 2rem;
-      line-height: 0;
-      padding: 14px 0;
-      text-indent: 4px;
-    }
-
-    .terminal pre {
-      font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-      color: white;
-      padding: 0 1rem 1rem;
-      margin: 0;
-    }
-
-    .circle-link {
-      height: 40px;
-      width: 40px;
-      border-radius: 40px;
-      margin: 8px;
-      background-color: white;
-      border: 1px solid #eeeeee;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: 1s ease-out;
-    }
-
-    .circle-link:hover {
-      transform: translateY(-0.25rem);
-      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    footer {
-      margin-top: 8px;
-      display: flex;
-      align-items: center;
-      line-height: 20px;
-    }
-
-    footer a {
-      display: flex;
-      align-items: center;
-    }
-
-    .github-star-badge {
-      color: #24292e;
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      padding: 3px 10px;
-      border: 1px solid rgba(27,31,35,.2);
-      border-radius: 3px;
-      background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-      margin-left: 4px;
-      font-weight: 600;
-      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    }
-
-    .github-star-badge:hover {
-      background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-      border-color: rgba(27,31,35,.35);
-      background-position: -.5em;
-    }
-
-    .github-star-badge .material-icons {
-      height: 16px;
-      width: 16px;
-      margin-right: 4px;
-    }
-
-    svg#clouds {
-      position: fixed;
-      bottom: -160px;
-      left: -230px;
-      z-index: -10;
-      width: 1920px;
-    }
-
-
-    /* Responsive Styles */
-    @media screen and (max-width: 767px) {
-
-      .card-container > *:not(.circle-link) ,
-      .terminal {
-        width: 100%;
-      }
-
-      .card:not(.highlight-card) {
-        height: 16px;
-        margin: 8px 0;
-      }
-
-      .card.highlight-card span {
-        margin-left: 72px;
-      }
-
-      svg#rocket-smoke {
-        right: 120px;
-        transform: rotate(-5deg);
-      }
-    }
-
-    @media screen and (max-width: 575px) {
-      svg#rocket-smoke {
-        display: none;
-        visibility: hidden;
-      }
-    }
-  </style>
-
-    <div class="parent-container">
-      <!-- Toolbar -->
-      <div role="banner" style="
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      font-family: 'Work Sans',sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1.5;">
-        <span style="padding: 10px 55px; cursor: default;">
-          Bienvenido a la tienda oficial de Alcont de Mexico, Recuerda que nuestros productos se venden en USD.
-        </span>
+<div class="parent-container">
+  <!-- Toolbar -->
+  <div role="banner" style="
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: 'Work Sans',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;">
+  <span style="padding: 10px 55px; cursor: default;">
+    Bienvenido a la tienda oficial de Alcont de Mexico, Recuerda que nuestros productos se venden en USD.
+  </span>
+  </div>
+  <!-- Menu -->
+  <div class="" style="background-color: #fff; width: 100%; color: #3d6380;">
+    <div class="grid" style="padding: 20px; width: 100%; margin: 0px;">
+    	<div class="col" align="center" style="padding: 0;">
+        <h2 style="font-weight: normal; padding: 10px;">ALCONT DE MÉXICO</h2>
       </div>
-      <!-- Menu -->
-      <div class="" style="
-      background-color: #fff;
-      width: 100%;
-      color: #3d6380;">
-        <div class="grid" style="padding: 20px; width: 100%;">
-      		<div class="col" align="center">
-            <h2 style="font-weight: normal;">ALCONT DE MÉXICO</h2>
-          </div>
-      		<div class="col">
-            <button mat-button [matMenuTriggerFor]="marcas"
-             style="border: none; background: #FFF; cursor: pointer;
+    	<div class="col">
+        <button mat-button [matMenuTriggerFor]="marcas"
+         style="border: none; background: #FFF; cursor: pointer;
+                margin: 6px 0; padding: 10px; color: #3d6380; font-size: 16px;">
+                Marcas
+        </button>
+
+        <!-- Inicio menú de marcas -->
+        <mat-menu #marcas="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="pepperl">PEPPERL + FUCHS</button>
+          <button mat-menu-item >SPRECHER SCHUH</button>
+          <button mat-menu-item [matMenuTriggerFor]="weidmuller">WEIDMÜLLER</button>
+          <button mat-menu-item [matMenuTriggerFor]="eaton">EATON MOELLER</button>
+          <button mat-menu-item [matMenuTriggerFor]="norgren">NORGREN</button>
+        </mat-menu>
+        <!-- Fin menú de marcas -->
+        <!-- Inicio sub menú pepperl-->
+        <mat-menu #pepperl="matMenu">
+          <button mat-menu-item >Sensor Inductivo</button>
+          <button mat-menu-item >Sensores Ultrasónicos</button>
+          <button mat-menu-item >Sensor Fotoélectrico</button>
+          <button mat-menu-item>Sensor Retroreflectivo</button>
+          <button mat-menu-item>Sensor Óptico</button>
+        </mat-menu>
+        <!-- Fin sub menú pepperl -->
+        <!-- Inicio sub menú weidmuller-->
+        <mat-menu #weidmuller="matMenu">
+          <button mat-menu-item >Clema de paso (Tres Niveles)</button>
+          <button mat-menu-item >Clema Portafusible</button>
+          <button mat-menu-item >Clema de Tierra</button>
+          <button mat-menu-item>Clema de Paso</button>
+          <button mat-menu-item>Clema Doble Piso</button>
+          <button mat-menu-item>Tope para Clema</button>
+          <button mat-menu-item>Etiquetas</button>
+          <button mat-menu-item>Portaetiqueta</button>
+          <button mat-menu-item>Accesorios</button>
+          <button mat-menu-item>Clemas (Bloques Terminales)</button>
+          <button mat-menu-item>Conectividad Électrica</button>
+          <button mat-menu-item>Terminales</button>
+          <button mat-menu-item>Herramientas</button>
+        </mat-menu>
+        <!-- Fin sub menú weidmuller -->
+        <!-- Inicio sub menú eaton-->
+        <mat-menu #eaton="matMenu">
+          <button mat-menu-item >Botones</button>
+          <button mat-menu-item >Switch</button>
+          <button mat-menu-item >Contactores</button>
+          <button mat-menu-item>Relevadores</button>
+          <button mat-menu-item>Micros</button>
+          <button mat-menu-item>Interruptores</button>
+          <button mat-menu-item>LED's</button>
+        </mat-menu>
+        <!-- Fin sub menú eaton -->
+        <!-- Inicio sub menú norgren-->
+        <mat-menu #norgren="matMenu">
+          <button mat-menu-item >Conectores</button>
+          <button mat-menu-item >Filtros</button>
+          <button mat-menu-item >Reguladores</button>
+          <button mat-menu-item>Lubricadores</button>
+        </mat-menu>
+        <!-- Fin sub menú norgren -->
+        <button style="border: none; background: #FFF; cursor: pointer;
                     margin: 6px 0; padding: 10px; color: #3d6380; font-size: 16px;">
-                    Marcas
-            </button>
-            <!-- Inicio menú de marcas -->
-            <mat-menu #marcas="matMenu">
-              <button mat-menu-item [matMenuTriggerFor]="pepperl">PEPPERL + FUCHS</button>
-              <button mat-menu-item >SPRECHER SCHUH</button>
-              <button mat-menu-item [matMenuTriggerFor]="weidmuller">WEIDMÜLLER</button>
-              <button mat-menu-item [matMenuTriggerFor]="eaton">EATON MOELLER</button>
-              <button mat-menu-item [matMenuTriggerFor]="norgren">NORGREN</button>
-            </mat-menu>
-            <!-- Fin menú de marcas -->
-            <!-- Inicio sub menú pepperl-->
-            <mat-menu #pepperl="matMenu">
-              <button mat-menu-item >Sensor Inductivo</button>
-              <button mat-menu-item >Sensores Ultrasónicos</button>
-              <button mat-menu-item >Sensor Fotoélectrico</button>
-              <button mat-menu-item>Sensor Retroreflectivo</button>
-              <button mat-menu-item>Sensor Óptico</button>
-            </mat-menu>
-            <!-- Fin sub menú pepperl -->
-            <!-- Inicio sub menú weidmuller-->
-            <mat-menu #weidmuller="matMenu">
-              <button mat-menu-item >Clema de paso (Tres Niveles)</button>
-              <button mat-menu-item >Clema Portafusible</button>
-              <button mat-menu-item >Clema de Tierra</button>
-              <button mat-menu-item>Clema de Paso</button>
-              <button mat-menu-item>Clema Doble Piso</button>
-              <button mat-menu-item>Tope para Clema</button>
-              <button mat-menu-item>Etiquetas</button>
-              <button mat-menu-item>Portaetiqueta</button>
-              <button mat-menu-item>Accesorios</button>
-              <button mat-menu-item>Clemas (Bloques Terminales)</button>
-              <button mat-menu-item>Conectividad Électrica</button>
-              <button mat-menu-item>Terminales</button>
-              <button mat-menu-item>Herramientas</button>
-            </mat-menu>
-            <!-- Fin sub menú weidmuller -->
-            <!-- Inicio sub menú eaton-->
-            <mat-menu #eaton="matMenu">
-              <button mat-menu-item >Botones</button>
-              <button mat-menu-item >Switch</button>
-              <button mat-menu-item >Contactores</button>
-              <button mat-menu-item>Relevadores</button>
-              <button mat-menu-item>Micros</button>
-              <button mat-menu-item>Interruptores</button>
-              <button mat-menu-item>LED's</button>
-            </mat-menu>
-            <!-- Fin sub menú eaton -->
-            <!-- Inicio sub menú norgren-->
-            <mat-menu #norgren="matMenu">
-              <button mat-menu-item >Conectores</button>
-              <button mat-menu-item >Filtros</button>
-              <button mat-menu-item >Reguladores</button>
-              <button mat-menu-item>Lubricadores</button>
-            </mat-menu>
-            <!-- Fin sub menú norgren -->
-            <button
-             style="border: none; background: #FFF; cursor: pointer;
+                Quienes somos
+        </button>
+        <button style="border: none; background: #FFF; cursor: pointer;
                     margin: 6px 0; padding: 10px; color: #3d6380; font-size: 16px;">
-                    Quienes somos
-            </button>
-            <button
-             style="border: none; background: #FFF; cursor: pointer;
-                    margin: 6px 0; padding: 10px; color: #3d6380; font-size: 16px;">
-                    Contacto
-            </button>
-          </div>
-      		<div class="col"></div>
-        </div>
+                Contacto
+        </button>
       </div>
-      <div style="width: 100%; height: 633px; background: black;">
-        <owl-carousel-o [options]="customOptions" style="width: 100%; height: 100%;" class="test">
-        <ng-template carouselSlide><img src="../assets/img/PARA_USAR_1.png"></ng-template>
-        <ng-template carouselSlide><img src="../assets/img/PARA_USAR_2.jpg"></ng-template>
-        <ng-template class="zoom" carouselSlide><img src="../assets/img/PARA_USAR_4.jpeg"></ng-template>
-      </owl-carousel-o>
-      </div>
-
-      <!-- Footer -->
-
-
-        <div class="page-footer" style="padding: 30px;">
-          <div class="container">
-            <div class="grid">
-              <div class="col-3_md-4_sm-6_xs-12">
-                <h3 class="white-text">Alcont de México</h3>
-                <div class="" style="width: 170px;">
-                  <span>Ofrecemos soluciones en automatización industrial Consulta con nuestros asesores técnicos. </span>
-                </div>
-              </div>
-
-              <div class="col-3_md-4_sm-6_xs-12">
-                <h3 class="white-text">Contacto</h3>
-                <div class="" style="width: 170px;">
-                  <span>pdeluna@alcont.com.mx</span>
-                  <span>tel (81) 83318055</span>
-                  <span>(81) 83512931 </span>
-                </div>
-              </div>
-
-              <div class="col-3_md-4_sm-6_xs-12">
-                <h3 class="white-text">Dirección</h3>
-                <div class="" style="width: 170px;">
-                  <span>Col. Hidalgo Monterrey, Nuevo León</span>
-                </div>
-              </div>
-
-              <div class="col-3_md-4_sm-6_xs-12">
-                <h3 class="white-text">Aviso de Privacidad</h3>
-              </div>
-            </div>
-          </div>
-          <section style="border-top: 1px solid #cacaca; padding-top: 16px;">
-            <div class="container">
-              <div class="grid">
-                <div class="col-1" style="padding-bottom: 0px;">
-                  <a href="https://www.facebook.com/Alcontdemexico" target="_blank">
-                    <span class="ion ion-logo-facebook" style="font-size: 40px; color: #6495ed;"></span>
-                  </a>
-                </div>
-                <div class="col-12">
-                  <h5>© 2020, Alcont de México</h5>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div> -->
-        </div>
+      <div class="col"></div>
     </div>
-
-
-
+  </div>
+  <!-- Fin Menu Header  -->
   <router-outlet></router-outlet>
+  <!-- Footer -->
+  <div class="page-footer" style="padding: 30px;">
+    <div class="container">
+      <div class="grid">
+        <div class="col-3_md-4_sm-6_xs-12">
+          <h3 class="white-text">Alcont de México</h3>
+          <div class="" style="width: 170px;">
+            <span>Ofrecemos soluciones en automatización industrial Consulta con nuestros asesores técnicos. </span>
+          </div>
+        </div>
+
+        <div class="col-3_md-4_sm-6_xs-12">
+          <h3 class="white-text">Contacto</h3>
+          <div class="" style="width: 170px;">
+            <span>pdeluna@alcont.com.mx</span>
+            <span>tel (81) 83318055</span>
+            <span>(81) 83512931 </span>
+          </div>
+        </div>
+
+        <div class="col-3_md-4_sm-6_xs-12">
+          <h3 class="white-text">Dirección</h3>
+          <div class="" style="width: 170px;">
+            <span>Col. Hidalgo Monterrey, Nuevo León</span>
+          </div>
+        </div>
+
+        <div class="col-3_md-4_sm-6_xs-12">
+          <h3 class="white-text">Aviso de Privacidad</h3>
+        </div>
+      </div>
+    </div>
+    <section style="border-top: 1px solid #cacaca; padding-top: 16px;">
+      <div class="container">
+        <div class="grid">
+          <div class="col-1" style="padding-bottom: 0px;">
+            <a href="https://www.facebook.com/Alcontdemexico" target="_blank">
+              <span class="ion ion-logo-facebook" style="font-size: 40px; color: #6495ed;"></span>
+            </a>
+          </div>
+
+          <div class="col-12">
+            <h5>© 2020, Alcont de México</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

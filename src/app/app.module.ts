@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 
 // instalados
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
