@@ -10,13 +10,15 @@ import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AvisoPrivacidadComponent
+    AvisoPrivacidadComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
