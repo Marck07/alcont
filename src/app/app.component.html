@@ -146,4 +146,40 @@
       </div>
     </section>
   </div>
+  <button class="open-button" (click)="chat()">
+    <span class="ion ion-logo-whatsapp" style="font-size: 40px; color: #FFF; margin: -6px;"></span>
+  </button>
+
+  <div class="chat-popup" id="myForm"  [ngClass]="{'chatClosed': !chatView, 'chatOpen': chatView}">
+    <form class="form-container">
+      <div class="" style="height: 85px;
+                          background: linear-gradient(110.56deg,#20802c 0,#30bf42 100%);
+                          padding: 10px;
+                          border-radius: 10px 10px 0px 0px;">
+        <h1>Hola!</h1>
+
+        <label for="msg"><b>Elige a quien enviar un mensaje.</b></label>
+
+      </div>
+      <div class="chat-container">
+        <div class="grid" style="border-bottom: 1px solid #e1e1e1; cursor: pointer;" (click)="sendMessage(528711357297)">
+          <div class="col-3" align="center">
+            <span class="ion ion-ios-contact" style="color: #7796a7; font-size: 40px;"></span>
+          </div>
+          <div class="col-9" style="color: #000;">
+            <span>
+              Marco Meza
+            </span>
+            <br>
+            <span>
+              Desarrollador
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- <button type="submit" class="btn">Send</button> -->
+      <button type="button" class="btn cancel" (click)="chat()">Close</button>
+    </form>
+  </div>
 </div>

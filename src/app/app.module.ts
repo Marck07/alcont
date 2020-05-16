@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatMenuModule} from '@angular/material/menu';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +27,12 @@ import { ContactoComponent } from './contacto/contacto.component';
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatButtonModule,
     CarouselModule,
     BrowserAnimationsModule // Browser Animation, Must for pop-up menu
   ],
