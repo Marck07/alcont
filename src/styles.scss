@@ -69,6 +69,10 @@ p {
   font-size: 40px;
 }
 
+// Font weights
+.fWeightNormal {
+  font-weight: normal;
+}
 // cursors
 .cHand {
   cursor: pointer;
@@ -93,6 +97,12 @@ p {
 .bpad0{
   padding-bottom: 0!important;
 }
+
+.none-decoration {
+  text-decoration: none!important;
+  color: inherit!important;
+}
+
 .spacer {
   flex: 1;
 }
