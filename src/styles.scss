@@ -2,6 +2,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -53,6 +54,45 @@ p {
   margin: 0;
 }
 
+// colors
+.primary-alcont-color {
+  color: #7796a7;
+}
+.black {
+  color: #000;
+}
+.white {
+  color: #FFF;
+}
+// Font sizes
+.fSize40 {
+  font-size: 40px;
+}
+
+// cursors
+.cHand {
+  cursor: pointer;
+}
+
+// margins
+.mar0 {
+  margin: 0!important;
+}
+
+// bottom margins
+.bmar0{
+  margin-bottom: 0!important;
+}
+
+// paddings
+.pad0 {
+  padding: 0!important;
+}
+
+// bottom paddings
+.bpad0{
+  padding-bottom: 0!important;
+}
 .spacer {
   flex: 1;
 }

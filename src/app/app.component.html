@@ -146,4 +146,60 @@
       </div>
     </section>
   </div>
+
+  <!-- whatsapp chat -->
+  <button class="open-button" (click)="chat()">
+    <span class="ion ion-logo-whatsapp fSize40 white" style="margin: -6px;"></span>
+  </button>
+
+  <div class="chat-popup" id="myForm"  [ngClass]="{'chatClosed': !chatView, 'chatOpen': chatView}">
+    <form class="form-container">
+      <div class="header-chat">
+        <div class="grid">
+          <div class="col-10">
+            <h1 class="bmar0 bpad0">Hola!</h1>
+            <p class="white header-text-chat">Si tienes alguna duda o comentario, no dudes en contactarnos.</p>
+          </div>
+          <div class="col-2">
+            <span class="ion ion-md-close-circle fSize40 cHand" (click)="chat()"></span>
+          </div>
+        </div>
+
+        <label for="msg"><b>Elige a quien enviar un mensaje.</b></label>
+
+      </div>
+      <div class="chat-container">
+        <div class="grid contact-chat-row" (click)="sendMessage(528711357297)">
+          <div class="col-3" align="center">
+            <span class="ion ion-ios-contact primary-alcont-color fSize40"></span>
+          </div>
+          <div class="col-9 black">
+            <span>
+              Marco Meza
+            </span>
+            <br>
+            <span>
+              Desarrollador
+            </span>
+          </div>
+        </div>
+        <div class="grid contact-chat-row" (click)="sendMessage(528118217899)">
+          <div class="col-3" align="center">
+            <span class="ion ion-ios-contact primary-alcont-color fSize40"></span>
+          </div>
+          <div class="col-9 black">
+            <span>
+              Patricia B.
+            </span>
+            <br>
+            <span>
+              Sales
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- <button type="button" class="btn cancel" (click)="chat()">Close</button> -->
+    </form>
+  </div>
 </div>
