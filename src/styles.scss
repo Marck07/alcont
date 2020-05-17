@@ -74,6 +74,25 @@ p {
   cursor: pointer;
 }
 
+// margins
+.mar0 {
+  margin: 0!important;
+}
+
+// bottom margins
+.bmar0{
+  margin-bottom: 0!important;
+}
+
+// paddings
+.pad0 {
+  padding: 0!important;
+}
+
+// bottom paddings
+.bpad0{
+  padding-bottom: 0!important;
+}
 .spacer {
   flex: 1;
 }
