@@ -82,13 +82,13 @@
           <button mat-menu-item>Lubricadores</button>
         </mat-menu>
         <!-- Fin sub menú norgren -->
-        <button style="border: none; background: #FFF; cursor: pointer;
+        <button (click)="goAboutus()" style="border: none; background: #FFF; cursor: pointer;
                      padding: 10px; color: #3d6380; font-size: 16px; letter-spacing: 2px;">
-                <a href="/aboutus" class="none-decoration">Quienes somos</a>
+                Quienes somos
         </button>
-        <button style="border: none; background: #FFF; cursor: pointer;
+        <button (click)="goContact()" style="border: none; background: #FFF; cursor: pointer;
                      padding: 10px; color: #3d6380; font-size: 16px; letter-spacing: 2px;">
-                <a href="/contacto" class="none-decoration">Contacto</a>
+                Contacto
         </button>
       </div>
       <div class="col" style="padding: 0;"></div>

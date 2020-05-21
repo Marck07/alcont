@@ -12,7 +12,7 @@ const routes: Routes = [
               { path: '', component: HomeComponent },
               { path: 'aviso-privacidad', component: AvisoPrivacidadComponent },
               { path: 'contacto', component: ContactoComponent },
-              { path: 'aboutus', component: AboutUsComponent }
+              { path: 'nosotros', component: AboutUsComponent }
              ];
 
 @NgModule({
