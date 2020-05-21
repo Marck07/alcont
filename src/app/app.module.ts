@@ -14,6 +14,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     AppComponent,
     HomeComponent,
     AvisoPrivacidadComponent,
-    ContactoComponent
+    ContactoComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
