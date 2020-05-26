@@ -104,6 +104,9 @@ p {
 .fWeightNormal {
   font-weight: normal;
 }
+.fWeightBold {
+  font-weight: bold;
+}
 // cursors
 .cHand {
   cursor: pointer;
@@ -122,7 +125,9 @@ p {
 .bmar0{
   margin-bottom: 0!important;
 }
-
+.bmar55 {
+  margin-bottom: 55px!important;
+}
 // paddings
 .pad0 {
   padding: 0!important;
@@ -160,6 +165,12 @@ p {
   border-top: 1px solid #cacaca;
   padding-top: 16px;
 }
+
+.text-line {
+  margin: 0 0 19.44444px;
+  line-height: 1.5;
+}
+
 .parent-container {
   /*position: absolute;*/
   /*top: 0;*/
