@@ -52,11 +52,21 @@ h6 {
 
 p {
   margin: 0;
+  color: #69727b;
 }
-
+.subtitle {
+  text-align: justify;
+  font-weight: normal!important;
+  margin: 0 0 19.44444px!important;
+  line-height: 1.5!important;
+  margin-bottom: 55px!important;
+}
 // colors
 .primary-alcont-color {
   color: #7796a7;
+}
+.text-alcont-color {
+  color: #69727b;
 }
 .black {
   color: #000;
@@ -86,6 +96,9 @@ p {
 .fSize40 {
   font-size: 40px;
 }
+.fSize16 {
+  font-size: 16px!important;
+}
 
 // Font weights
 .fWeightNormal {
@@ -101,6 +114,10 @@ p {
   margin: 0!important;
 }
 
+// top margins
+.tmar15 {
+  margin-top: 15px;
+}
 // bottom margins
 .bmar0{
   margin-bottom: 0!important;
@@ -119,6 +136,10 @@ p {
   padding-bottom: 0!important;
 }
 
+// aligns
+.justify {
+  text-align: justify;
+}
 // flex styles
 .inline-flex {
   display: inline-flex;
