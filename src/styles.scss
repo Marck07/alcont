@@ -64,6 +64,19 @@ p {
 .white {
   color: #FFF;
 }
+
+// background colors
+.backWhite {
+  background-color: #FFF!important;
+}
+// Percent Whidth's
+.W100 {
+  width: 100%!important;
+}
+// px widht's
+.w170 {
+  width: 170px!important;
+}
 // Font sizes
 .fSize40 {
   font-size: 40px;
@@ -92,21 +105,35 @@ p {
 .pad0 {
   padding: 0!important;
 }
+.pad30 {
+  padding: 30px;
+}
 
 // bottom paddings
 .bpad0{
   padding-bottom: 0!important;
 }
 
+// flex styles
+.inline-flex {
+  display: inline-flex;
+}
 .none-decoration {
   text-decoration: none!important;
   color: inherit!important;
 }
-
+.fbIcon {
+  font-size: 40px;
+  color: #6495ed;
+}
 .spacer {
   flex: 1;
 }
 
+.divider {
+  border-top: 1px solid #cacaca;
+  padding-top: 16px;
+}
 .parent-container {
   /*position: absolute;*/
   /*top: 0;*/

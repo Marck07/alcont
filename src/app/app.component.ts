@@ -26,10 +26,16 @@ export class AppComponent {
     window.open(link, '_blank')
   }
 
+  goHome() {
+     this.router.navigate(['']);
+  }
   goAboutus() {
      this.router.navigate(['nosotros']);
   }
   goContact() {
      this.router.navigate(['contacto']);
+  }
+  goPrivacy() {
+     this.router.navigate(['/aviso-privacidad']);
   }
 }
