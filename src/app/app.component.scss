@@ -27,9 +27,19 @@
   color: #3d6380;
   font-size: 16px;
   letter-spacing: 2px;
+  transition: transform .02s;
+}
+.option-header:hover {
+  transform: scale(1.02);
 }
 .option-header:focus {
   outline: none!important;
+}
+.privacy-option {
+  transition: transform .01s;
+}
+.privacy-option:hover {
+  transform: scale(1.01);
 }
 .chatClosed {
   height: 0;
