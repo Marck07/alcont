@@ -1,7 +1,7 @@
-<div style="width: 100%; height: 633px; background: black;">
-  <owl-carousel-o [options]="customOptions" style="width: 100%; height: 100%;" class="test">
+<div [@animationInOut]="'in'"  class="carousel-container">
+  <owl-carousel-o [options]="customOptions" class="W100 H100">
   <ng-template carouselSlide><img src="../assets/img/PARA_USAR_1.png"></ng-template>
       <ng-template carouselSlide><img src="../assets/img/PARA_USAR_2.jpg"></ng-template>
-      <ng-template class="zoom" carouselSlide><img src="../assets/img/PARA_USAR_4.jpeg"></ng-template>
+      <ng-template carouselSlide><img src="../assets/img/PARA_USAR_4.jpeg"></ng-template>
     </owl-carousel-o>
 </div>

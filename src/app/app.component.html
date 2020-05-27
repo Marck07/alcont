@@ -1,30 +1,18 @@
 <div class="parent-container">
   <!-- Toolbar -->
-  <div role="banner" style="
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-family: 'Work Sans',sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;">
-  <span style="padding: 10px 55px; cursor: default;">
-    Bienvenido a la tienda oficial de Alcont de Mexico, Recuerda que nuestros productos se venden en USD.
-  </span>
+  <div role="banner" class="header-legend">
+    <span>
+      Bienvenido a la tienda oficial de Alcont de Mexico, Recuerda que nuestros productos se venden en USD.
+    </span>
   </div>
   <!-- Menu -->
-  <div class="" style="background-color: #fff; width: 100%; color: #3d6380;">
-    <div class="grid" style="width: 100%; margin: 0px;">
-    	<div class="col" align="center" style=" padding: 10px 0;">
-        <a href="#" style="text-decoration: none; color: inherit;">
-          <h2 style="font-weight: normal; padding: 10px; margin-bottom: 0; letter-spacing: 2px;">ALCONT DE MÉXICO</h2>
-        </a>
+  <div class="primary-alcont-color W100 backWhite">
+    <div class="grid W100 mar0">
+    	<div (click)="goHome()" class="col cHand" align="center" style="padding: 10px 0;">
+          <h2 class="home-menu-title">ALCONT DE MÉXICO</h2>
       </div>
-    	<div class="col" style="display: inline-flex; padding: 0;">
-        <button class="fWeightNormal" mat-button [matMenuTriggerFor]="marcas"
-         style="border: none; background: #FFF; cursor: pointer;
-                 padding: 10px; color: #3d6380; font-size: 16px; letter-spacing: 2px;">
+    	<div class="col inline-flex pad0">
+        <button class="fWeightNormal option-header" mat-button [matMenuTriggerFor]="marcas">
                 Marcas
         </button>
 
@@ -82,34 +70,32 @@
           <button mat-menu-item>Lubricadores</button>
         </mat-menu>
         <!-- Fin sub menú norgren -->
-        <button (click)="goAboutus()" style="border: none; background: #FFF; cursor: pointer;
-                     padding: 10px; color: #3d6380; font-size: 16px; letter-spacing: 2px;">
+        <button (click)="goAboutus()" class="option-header">
                 Quienes somos
         </button>
-        <button (click)="goContact()" style="border: none; background: #FFF; cursor: pointer;
-                     padding: 10px; color: #3d6380; font-size: 16px; letter-spacing: 2px;">
+        <button (click)="goContact()" class="option-header">
                 Contacto
         </button>
       </div>
-      <div class="col" style="padding: 0;"></div>
+      <div class="col pad0"></div>
     </div>
   </div>
   <!-- Fin Menu Header  -->
   <router-outlet></router-outlet>
   <!-- Footer -->
-  <div class="page-footer" style="padding: 30px;">
+  <div class="page-footer pad30">
     <div class="container">
       <div class="grid">
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Alcont de México</h3>
-          <div class="" style="width: 170px;">
+          <div class="w170">
             <span>Ofrecemos soluciones en automatización industrial Consulta con nuestros asesores técnicos. </span>
           </div>
         </div>
 
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Contacto</h3>
-          <div class="" style="width: 170px;">
+          <div class="w170">
             <span>pdeluna@alcont.com.mx</span>
             <span>tel (81) 83318055</span>
             <span>(81) 83512931 </span>
@@ -118,24 +104,22 @@
 
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Dirección</h3>
-          <div class="" style="width: 170px;">
+          <div class="w170">
             <span>Col. Hidalgo Monterrey, Nuevo León</span>
           </div>
         </div>
 
-        <div class="col-3_md-4_sm-6_xs-12">
-          <a href="/aviso-privacidad" style="text-decoration: none; color: inherit;">
-            <h3 class="white-text">Aviso de Privacidad</h3>
-          </a>
+        <div class="col-3_md-4_sm-6_xs-12 cHand" (click)="goPrivacy()">
+            <h3 class="white-text privacy-option">Aviso de Privacidad</h3>
         </div>
       </div>
     </div>
-    <section style="border-top: 1px solid #cacaca; padding-top: 16px;">
+    <section class="divider">
       <div class="container">
         <div class="grid">
-          <div class="col-1" style="padding-bottom: 0px;">
+          <div class="col-1 bpad0">
             <a href="https://www.facebook.com/Alcontdemexico" target="_blank">
-              <span class="ion ion-logo-facebook" style="font-size: 40px; color: #6495ed;"></span>
+              <span class="ion ion-logo-facebook fbIcon"></span>
             </a>
           </div>
 

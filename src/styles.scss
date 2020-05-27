@@ -52,11 +52,21 @@ h6 {
 
 p {
   margin: 0;
+  color: #69727b;
 }
-
+.subtitle {
+  text-align: justify;
+  font-weight: normal!important;
+  margin: 0 0 19.44444px!important;
+  line-height: 1.5!important;
+  margin-bottom: 55px!important;
+}
 // colors
 .primary-alcont-color {
   color: #7796a7;
+}
+.text-alcont-color {
+  color: #69727b;
 }
 .black {
   color: #000;
@@ -64,14 +74,38 @@ p {
 .white {
   color: #FFF;
 }
+
+// background colors
+.backWhite {
+  background-color: #FFF!important;
+}
+// Percent Whidth's
+.W100 {
+  width: 100%!important;
+}
+
+// Percent Height's
+.H100 {
+  height: 100%!important;
+}
+// px widht's
+.w170 {
+  width: 170px!important;
+}
 // Font sizes
 .fSize40 {
   font-size: 40px;
+}
+.fSize16 {
+  font-size: 16px!important;
 }
 
 // Font weights
 .fWeightNormal {
   font-weight: normal;
+}
+.fWeightBold {
+  font-weight: bold;
 }
 // cursors
 .cHand {
@@ -83,14 +117,23 @@ p {
   margin: 0!important;
 }
 
+// top margins
+.tmar15 {
+  margin-top: 15px;
+}
 // bottom margins
 .bmar0{
   margin-bottom: 0!important;
 }
-
+.bmar55 {
+  margin-bottom: 55px!important;
+}
 // paddings
 .pad0 {
   padding: 0!important;
+}
+.pad30 {
+  padding: 30px;
 }
 
 // bottom paddings
@@ -98,21 +141,37 @@ p {
   padding-bottom: 0!important;
 }
 
+// aligns
+.justify {
+  text-align: justify;
+}
+// flex styles
+.inline-flex {
+  display: inline-flex;
+}
 .none-decoration {
   text-decoration: none!important;
   color: inherit!important;
 }
-
+.fbIcon {
+  font-size: 40px;
+  color: #6495ed;
+}
 .spacer {
   flex: 1;
 }
 
+.divider {
+  border-top: 1px solid #cacaca;
+  padding-top: 16px;
+}
+
+.text-line {
+  margin: 0 0 19.44444px;
+  line-height: 1.5;
+}
+
 .parent-container {
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*right: 0;*/
-  background-color: #7796a8;
   color: white;
   font-weight: 600;
 }
@@ -389,9 +448,6 @@ owl-stage div {
   height: 100%;
 }
 
-.zoom div img {
-   transform: scale(1.5);
-}
 .owl-theme .owl-nav {
   background: rgba(0, 0, 0, 0);
   margin: 0;
