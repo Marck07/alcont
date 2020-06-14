@@ -132,7 +132,7 @@
   </div>
 
   <!-- whatsapp chat -->
-  <button class="open-button" (click)="chat()">
+  <button class="open-button" (click)="chat()" [ngClass]="{'hideWhats': hide}">
     <span class="ion ion-logo-whatsapp fSize40 white" style="margin: -6px;"></span>
   </button>
 
@@ -178,6 +178,20 @@
             <br>
             <span>
               Sales
+            </span>
+          </div>
+        </div>
+        <div class="grid contact-chat-row" (click)="chatLive()">
+          <div class="col-3" align="center">
+            <span class="ion ion-ios-contact primary-alcont-color fSize40"></span>
+          </div>
+          <div class="col-9 black">
+            <span>
+              Hablar por chat live
+            </span>
+            <br>
+            <span>
+
             </span>
           </div>
         </div>
