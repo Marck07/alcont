@@ -8,13 +8,35 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 export class AppComponent {
 
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router  ) {}
-
   title = 'alcont';
   chatView = false;
+  activeTawkChat = false;
+  hide = false;
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router  ) {
+      this.tawk();
+    }
 
+  tawk() {
+    if (this.activeTawkChat) {
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5ed836749e5f6944228fd4a8/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    }
+  }
+  chatLive() {
+    this.activeTawkChat = true;
+    this.hide = true;
+    this.tawk();
+    this.chat();
+  }
   chat() {
     this.chatView = !this.chatView;
   }
