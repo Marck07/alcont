@@ -17,6 +17,9 @@ export class AppComponent {
     private router: Router  ) {
       this.tawk();
     }
+    onActivate(event) {
+      window.scroll(0,0);      
+  }
 
   tawk() {
     if (this.activeTawkChat) {

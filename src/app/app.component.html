@@ -84,7 +84,7 @@
     </div>
   </div>
   <!-- Fin Menu Header  -->
-  <router-outlet></router-outlet>
+  <router-outlet (activate)="onActivate($event)"></router-outlet>
   <!-- Footer -->
   <div class="page-footer pad30">
     <div class="container">
