@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     HomeComponent,
     AvisoPrivacidadComponent,
     ContactoComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FrequentlyAskedComponent
   ],
   imports: [
     BrowserModule,
