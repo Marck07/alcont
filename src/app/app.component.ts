@@ -60,4 +60,7 @@ export class AppComponent {
   goPrivacy() {
      this.router.navigate(['/aviso-privacidad']);
   }
+  goQuestions() {
+     this.router.navigate(['/preguntas-frecuentes']);
+  }
 }

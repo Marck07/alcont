@@ -8,11 +8,11 @@
   <!-- Menu -->
   <div class="primary-alcont-color W100 backWhite">
     <div class="grid W100 mar0">
-    	<div (click)="goHome()" class="col cHand" align="center" style="padding: 10px 0;">
+    	<div (click)="goHome()" class="col-4 cHand" align="center" style="padding: 10px 0;">
           <h2 class="home-menu-title">ALCONT DE MÉXICO</h2>
       </div>
-    	<div class="col inline-flex pad0">
-        <button class="fWeightNormal option-header" mat-button [matMenuTriggerFor]="marcas">
+    	<div class="grid col-6 inline-flex pad0">
+        <button class="fWeightNormal col option-header" mat-button [matMenuTriggerFor]="marcas">
                 Marcas
         </button>
 
@@ -70,11 +70,14 @@
           <button mat-menu-item>Lubricadores</button>
         </mat-menu>
         <!-- Fin sub menú norgren -->
-        <button (click)="goAboutus()" class="option-header">
-                Quienes somos
+        <button (click)="goAboutus()" class="col option-header">
+                Nosotros
         </button>
-        <button (click)="goContact()" class="option-header">
+        <button (click)="goContact()" class="col option-header">
                 Contacto
+        </button>
+        <button (click)="goQuestions()" class="col option-header">
+                Preguntas Frecuentes
         </button>
       </div>
       <div class="col pad0"></div>
