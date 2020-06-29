@@ -4,7 +4,9 @@ import { MatMenuModule} from '@angular/material/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -37,6 +39,8 @@ import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.co
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatExpansionModule,
+    MatDividerModule,
     CarouselModule,
     BrowserAnimationsModule // Browser Animation, Must for pop-up menu
   ],
