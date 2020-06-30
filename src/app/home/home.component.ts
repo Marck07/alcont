@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,7 +20,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router ) { }
 
   customOptions: any = {
    loop: true,
@@ -50,5 +54,8 @@ export class HomeComponent implements OnInit {
 
   }
 
+  goContact() {
+     this.router.navigate(['contacto']);
+  }
 
 }

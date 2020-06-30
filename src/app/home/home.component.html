@@ -1,9 +1,10 @@
-<div [@animationInOut]="'in'"  class="carousel-container">
-  <owl-carousel-o [options]="customOptions" class="W100 H100">
+<div [@animationInOut]="'in'" class="container backWhite black">
+  <div  class="carousel-container">
+    <owl-carousel-o [options]="customOptions" class="W100 H100">
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
           <h1 class="col-12">
-             ALCONT DE MÉXICO <br>
+            ALCONT DE MÉXICO <br>
             <span>Asesoría Técnica y Soluciones Integrales </span>
           </h1>
         </div>
@@ -12,7 +13,7 @@
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
           <h1 class="col-12">
-             ALCONT DE MÉXICO <br>
+            ALCONT DE MÉXICO <br>
             <span>Tu Aliado Comercial </span>
           </h1>
         </div>
@@ -21,11 +22,136 @@
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
           <h1 class="col-12">
-             ALCONT DE MÉXICO <br>
+            ALCONT DE MÉXICO <br>
             <span>Optmiza Tus Líneas de Producción </span>
           </h1>
         </div>
         <img src="../assets/img/PARA_USAR_4.jpeg">
       </ng-template>
     </owl-carousel-o>
+  </div>
+
+    <div class="tmar60">
+      <div class="text-header col-12 W100">
+        <h1 class="text-alcont-color" align="center">Áreas de Enfoque</h1>
+
+        <div class="grid">
+          <div class="col-4">
+            <mat-card class="centered h400">
+              <div class="">
+                <span class="ion ion-ios-contact blue-alcont-color fSize120"></span>
+              </div>
+              <div class="">
+                <h2 class="primary-alcont-color">Desarrollo de Personal</h2>
+              </div>
+              <div class="">
+                <p class="card-info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                </p>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-4">
+            <mat-card class="centered h400">
+              <div class="">
+                <span class="ion ion-ios-lock blue-alcont-color fSize120"></span>
+              </div>
+              <div class="">
+                <h2 class="primary-alcont-color">Seguridad</h2>
+              </div>
+              <div class="">
+                <p class="card-info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                </p>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-4">
+            <mat-card class="centered h400">
+              <div class="">
+                <span class="ion ion-ios-timer blue-alcont-color fSize120"></span>
+              </div>
+              <div class="">
+                <h2 class="primary-alcont-color">Eficiencia</h2>
+              </div>
+              <div class="">
+                <p class="card-info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                  mio pesto Sic Mundus Creatus Est dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
+                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla
+                </p>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+
+        <div class="tmar60 centered">
+          <div class="text-header col-12 W100">
+            <h1 class="text-alcont-color">ALCONT como Distribuidor</h1>
+          </div>
+          <div class="sidePads50" align="center">
+            <p>TEXTO SOLO DE EJEMPLO
+            Como empresa de material aislante, llevamos más de 30 años en el sector, por lo que conocemos a la perfección lo que se necesita en cada caso. Como trabajamos con las marcas de referencia, como Isover, de
+              la que somos distribuidor oficial en España, le garantizamos siempre los mejores resultados al mejor precio.</p>
+              <div class="cHand" style="padding: 10px;
+                                    width: 280px;
+                                    border: 1px solid #27a6dc;
+                                    border-radius: 6px;" (click)="goContact()">
+                <span class="blue-alcont-color">Contactar con ALCONT</span>
+                 <!-- <span class="ion ion-ios-information-circle-outline blue-alcont-color fSize25"></span> -->
+              </div>
+          </div>
+        </div>
+
+        <div class="grid tmar60 sidePads50">
+          <div class="col-6">
+            <mat-card class="h600">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://cdn.pixabay.com/photo/2015/07/08/03/13/forklift-835340_960_720.jpg" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p class="card-info-text">
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-6">
+            <mat-card class="h600">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://cdn.pixabay.com/photo/2014/09/13/21/46/drill-444493_960_720.jpg" alt="Photo of a Shiba Inu">
+              <mat-card-content>
+                <p class="card-info-text">
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting.
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+        <div class="grid tmar60 sidePads50">
+          <div class="col-12">
+            <mat-card class="h600">
+              <iframe class="H100 W100" src="https://www.youtube.com/embed/6Mz_s02_1v4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

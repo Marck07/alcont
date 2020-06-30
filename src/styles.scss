@@ -65,6 +65,9 @@ p {
 .primary-alcont-color {
   color: #7796a7;
 }
+.blue-alcont-color {
+  color: #27a6dc;
+}
 .text-alcont-color {
   color: #69727b;
 }
@@ -92,12 +95,25 @@ p {
 .w170 {
   width: 170px!important;
 }
+// px height's
+.h400{
+  height: 400px;
+}
+.h600{
+  height: 600px;
+}
 // Font sizes
 .fSize40 {
   font-size: 40px;
 }
 .fSize16 {
   font-size: 16px!important;
+}
+.fSize25 {
+  font-size: 25px!important;
+}
+.fSize120 {
+  font-size: 120px!important;
 }
 
 // Font weights
@@ -121,6 +137,9 @@ p {
 .tmar15 {
   margin-top: 15px;
 }
+.tmar60 {
+  margin-top: 60px;
+}
 // bottom margins
 .bmar0{
   margin-bottom: 0!important;
@@ -135,7 +154,11 @@ p {
 .pad30 {
   padding: 30px;
 }
-
+// same side pads
+.sidePads50{
+  padding-left: 50px;
+  padding-right: 50px;
+}
 // bottom paddings
 .bpad0{
   padding-bottom: 0!important;
@@ -144,6 +167,9 @@ p {
 // aligns
 .justify {
   text-align: justify;
+}
+.centered {
+  text-align: center;
 }
 // flex styles
 .inline-flex {
@@ -270,6 +296,11 @@ svg.material-icons:not(:last-child) {
   margin-left: 60px;
 }
 
+.card-info-text{
+  color: rgba(105, 114, 123, 0.77);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
 svg#rocket {
   width: 80px;
   position: absolute;
@@ -482,4 +513,16 @@ owl-stage div {
 
 .hideWhats {
   display: none!important;
+}
+
+// .example-card {
+//   max-width: 400px;
+// }
+.mat-card-image {
+    width: calc(100% + 32px);
+    margin: 0 -16px 16px -16px!important;
+}
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
 }
