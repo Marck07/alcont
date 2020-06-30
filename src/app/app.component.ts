@@ -17,6 +17,9 @@ export class AppComponent {
     private router: Router  ) {
       this.tawk();
     }
+    onActivate(event) {
+      window.scroll(0,0);      
+  }
 
   tawk() {
     if (this.activeTawkChat) {
@@ -59,5 +62,8 @@ export class AppComponent {
   }
   goPrivacy() {
      this.router.navigate(['/aviso-privacidad']);
+  }
+  goQuestions() {
+     this.router.navigate(['/preguntas-frecuentes']);
   }
 }

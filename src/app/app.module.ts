@@ -4,7 +4,9 @@ import { MatMenuModule} from '@angular/material/menu';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
 
 
 @NgModule({
@@ -23,7 +26,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     HomeComponent,
     AvisoPrivacidadComponent,
     ContactoComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FrequentlyAskedComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +39,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
+    MatExpansionModule,
+    MatDividerModule,
     CarouselModule,
     BrowserAnimationsModule // Browser Animation, Must for pop-up menu
   ],
