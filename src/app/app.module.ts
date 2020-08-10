@@ -15,6 +15,8 @@ import { AppComponent } from './app.component';
 
 // instalados
 import { CarouselModule } from 'ngx-owl-carousel-o';
+
+// componentes
 import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
