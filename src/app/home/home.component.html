@@ -3,25 +3,26 @@
     <owl-carousel-o [options]="customOptions" class="W100 H100">
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
-          <h1 class="col-12">
+          <h1 class="col-12 cHand" (click)="scroll(areas)">
             ALCONT DE MÉXICO <br>
-            <span>Asesoría Técnica y Soluciones Integrales </span>
+            <span>Enfoque en áreas de importancia</span>
+            <!-- <span>Asesoría Técnica y Soluciones Integrales</span> -->
           </h1>
         </div>
         <img src="../assets/img/PARA_USAR_1.png">
       </ng-template>
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
-          <h1 class="col-12">
+          <h1 class="col-12 cHand" (click)="scroll(noticias)">
             ALCONT DE MÉXICO <br>
-            <span>Tu Aliado Comercial </span>
+            <span>Te mantiene informado con innovación técnologica</span>
           </h1>
         </div>
         <img src="../assets/img/PARA_USAR_2.jpg">
       </ng-template>
       <ng-template carouselSlide>
         <div align="center" class="grid-middle carousel-text-container">
-          <h1 class="col-12">
+          <h1 class="col-12 cHand" (click)="scroll(videos)">
             ALCONT DE MÉXICO <br>
             <span>Optmiza Tus Líneas de Producción </span>
           </h1>
@@ -35,7 +36,7 @@
       <div class="text-header col-12 W100">
         <h1 class="text-alcont-color" align="center">Áreas de Enfoque</h1>
 
-        <div class="grid">
+        <div class="grid" #areas>
           <div class="col-4">
             <mat-card class="centered h400">
               <div class="">
@@ -108,7 +109,7 @@
           </div>
         </div>
 
-        <div class="grid tmar60 sidePads50">
+        <div class="grid tmar60 sidePads50" #noticias>
           <div class="col-6">
             <mat-card class="h600">
               <mat-card-header>
@@ -145,7 +146,7 @@
           </div>
         </div>
 
-        <div class="grid tmar60 sidePads50">
+        <div class="grid tmar60 sidePads50" #videos>
           <div class="col-12">
             <mat-card class="h600">
               <iframe class="H100 W100" src="https://www.youtube.com/embed/6Mz_s02_1v4?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
