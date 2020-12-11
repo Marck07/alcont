@@ -8,7 +8,7 @@
   font-weight: 400;
   line-height: 1.5;
   background-color: #7796a8;
-  
+
   span {
     padding: 10px 55px;
     cursor: default;
@@ -29,9 +29,22 @@
   font-size: 16px;
   letter-spacing: 2px;
   transition: transform .02s;
+
+  .mat-button-focus-overlay {
+    opacity: 0!important;
+    background: #FFF!important;
+  }
 }
+.mat-button .mat-button-focus-overlay, .mat-icon-button .mat-button-focus-overlay {
+    opacity: 0!important;
+}
+
 .option-header:hover {
-  transform: scale(1.02);
+  transform: scale(1.1);
+  border-top: 5px solid;
+  border-bottom: 6px solid;
+  background: #eaeaea;
+  transition: border-bottom 0.3s, border-top .3s, background 0.6s;
 }
 .option-header:focus {
   outline: none!important;
@@ -47,6 +60,7 @@
   opacity: 0;
   transition: height 1s, opacity 1.5s;
 }
+
 .chatOpen {
   height: 480px;
   opacity: 1;

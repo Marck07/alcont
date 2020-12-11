@@ -26,11 +26,11 @@ export class HomeComponent implements OnInit {
 
   customOptions: any = {
    loop: true,
-   autoplay: true,
+   autoplay: false,
    mouseDrag: true,
    touchDrag: true,
    pullDrag: true,
-   dots: false,
+   dots: true,
    navSpeed: 700,
    navText: ['<', '>'],
    responsive: {
@@ -58,4 +58,10 @@ export class HomeComponent implements OnInit {
      this.router.navigate(['contacto']);
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({
+      behavior: 'smooth', // 'auto' or 'smooth'
+      block: 'nearest',    // 'start', 'center', 'end' or 'nearest'
+    });
+  }
 }

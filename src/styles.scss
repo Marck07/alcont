@@ -183,6 +183,45 @@ p {
   font-size: 40px;
   color: #6495ed;
 }
+
+.fbIcon:hover {
+  transform: scale(1.20);
+  color: #0073b1;
+  transition: transform .8s, color 1s;
+}
+
+.lnIcon {
+  font-size: 40px;
+  color: #0073b1;
+}
+
+.lnIcon:hover {
+  transform: scale(1.20);
+  color: #004165;
+  transition: transform .8s, color 1s;
+}
+
+.instaIcon {
+  font-size: 40px;
+  color: #dc2743;
+}
+
+.instaIcon:hover {
+  transform: scale(1.20);
+  transition: transform .8s;
+}
+
+.twIcon {
+  font-size: 40px;
+  color: rgba(29,161,242,1.00);
+}
+
+.twIcon:hover {
+  transform: scale(1.20);
+  color: #0073b1;
+  transition: transform .8s, color 1s;
+}
+
 .spacer {
   flex: 1;
 }
@@ -485,7 +524,44 @@ owl-stage div {
   position: absolute;
   width: 100%;
   bottom: 0;
+  display: none;
 }
+
+.owl-theme .owl-dots {
+  background: rgba(0, 0, 0, 0);
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: linear-gradient(to right,
+                rgba(80, 190, 190, 0.7) 0,
+                rgba(0, 153, 153, 0.7) 50%,
+                rgba(0, 153, 176, 0.7) 83%,
+                rgba(0, 153, 203, 0.7) 100%)!important;
+    -webkit-transform : rotate(90deg) scale(1.4); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform     : rotate(90deg) scale(1.4); /* IE 9 */
+    transform         : rotate(90deg) scale(1.4);
+    transition: transform .8s, background .8s;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    margin-left: 100px;
+    background: #adadad;
+    display: block;
+    -webkit-backface-visibility: visible;
+    -webkit-transform : scale(1); /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform     : scale(1); /* IE 9 */
+    transform         : scale(1);
+    transition: opacity 0.5s ease, transform .8s, background .8s;
+    border-radius: 20px;
+}
+
 .owl-carousel .owl-item::before {
   content: '';
     position: absolute;
