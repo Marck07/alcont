@@ -12,13 +12,20 @@ export class AppComponent {
   chatView = false;
   activeTawkChat = false;
   hide = false;
+  pageRoute;
   constructor(
     private route: ActivatedRoute,
     private router: Router  ) {
       this.tawk();
+        router.events.subscribe((url:any) => {
+          if(url.url) {
+            this.pageRoute = url.url;
+            console.log(this.pageRoute)
+          }
+        });
     }
     onActivate(event) {
-      window.scroll(0,0);      
+      window.scroll(0,0);
   }
 
   tawk() {

@@ -1,7 +1,7 @@
-<div class="parent-container">
+<div class="parent-container H100">
   <!-- Toolbar -->
   <!-- Menu -->
-  <div class="primary-alcont-color W100 backWhite">
+  <div class="primary-alcont-color W100 backWhite" *ngIf="pageRoute != '/login'">
     <div class="grid W100 mar0">
     	<div (click)="goHome()" class="col-3 cHand" align="center" style="padding: 10px 0;">
           <h2 class="home-menu-title">ALCONT DE MÉXICO</h2>
@@ -81,7 +81,7 @@
   <!-- Fin Menu Header  -->
   <router-outlet (activate)="onActivate($event)"></router-outlet>
   <!-- Footer -->
-  <div class="page-footer pad30">
+  <div class="page-footer pad30" *ngIf="pageRoute != '/login'">
     <div class="container">
       <div class="grid">
         <div class="col-3_md-4_sm-6_xs-12">

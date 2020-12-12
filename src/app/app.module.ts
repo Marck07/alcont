@@ -20,6 +20,7 @@ import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.co
 import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.co
     AvisoPrivacidadComponent,
     ContactoComponent,
     AboutUsComponent,
-    FrequentlyAskedComponent
+    FrequentlyAskedComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

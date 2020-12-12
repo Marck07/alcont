@@ -1,0 +1,81 @@
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-page {
+  height: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 670px;
+  position: relative;
+  background: url(https://image.freepik.com/foto-gratis/gafas-calculadora-tableta-blanco-escritorio-aseado_1387-385.jpg) no-repeat center;
+  box-shadow: 0px 15px 20px 6px rgba(0, 0, 0, 0.25), 0 17px 50px 0px rgba(0, 0, 0, 0.24)
+}
+
+.login-container {
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: linear-gradient(to right,
+                rgba(80, 190, 190, 0.7) 0,
+                rgba(0, 153, 153, 0.7) 50%,
+                rgba(0, 153, 176, 0.7) 83%,
+                rgba(0, 153, 203, 0.7) 100%);
+}
+
+.image-profile-container {
+  width: 200px;
+  height: 200px;
+  background: black;
+  border-radius: 1px;
+  border-radius:100px;
+
+  label {
+    color: #FFF;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 234px;
+  }
+}
+
+.form-login-container {
+  min-height: 345px;
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.login-input {
+  label {
+    font-size: 12px;
+    width: 100%;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    width: 100%;
+    color: #fff;
+    display: block;
+  }
+}
+
+.login-button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  width: 100%;
+  color: #fff;
+  display: block;
+  background: rgba(0, 0, 0, 0.75);
+}
