@@ -22,15 +22,11 @@ export class AuthService {
 
   async login(email: string, password: string) {
     var result = await this.afAuth.signInWithEmailAndPassword(email, password);
-    // this.router.navigate(['admin/list']);
-    console.log("loged in")
   }
 
   async logout(){
     await this.afAuth.signOut();
     localStorage.removeItem('user');
-    console.log("loged out")
-    this.router.navigate(['/login']);
   }
 
   get isLoggedIn(): boolean {

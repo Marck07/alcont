@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -63,8 +64,10 @@ var config = {
     CarouselModule,
     AngularFireModule.initializeApp(config),
     AngularFireAuthModule,
-    BrowserAnimationsModule // Browser Animation, Must for pop-up menu
+    BrowserAnimationsModule, // Browser Animation, Must for pop-up menu
+    MatSnackBarModule
   ],
+  exports: [MatIconModule],
   providers: [],
   bootstrap: [AppComponent]
 })

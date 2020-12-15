@@ -16,7 +16,10 @@
 
       <div class="bmar15 login-input">
         <label>Contraseña</label>
-        <input type="password" [(ngModel)]="password">
+        <input [type]="hide ? 'password' : 'text'" [(ngModel)]="password">
+        <button class="ver-pass-button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <span class="ion fSize40" [ngClass]="hide ? 'ion-ios-eye' : 'ion-ios-eye-off'"></span>
+      </button>
       </div>
 
       <div class="bmar15">
