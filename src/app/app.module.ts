@@ -15,12 +15,25 @@ import { AppComponent } from './app.component';
 
 // instalados
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+
+// Modulos
 import { HomeComponent } from './home/home.component';
 import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
 import { LoginComponent } from './login/login.component';
+
+var config = {
+    apiKey: "AIzaSyBRINpMEaLDDVf-EcPVT0effC1m8uQF73I",
+    authDomain: "alcont-fdc1a.firebaseapp.com",
+    databaseURL: "https://alcont-fdc1a.firebaseio.com",
+    projectId: "alcont-fdc1a",
+    storageBucket: "alcont-fdc1a.appspot.com",
+    messagingSenderId: "131014670357"
+};
 
 
 @NgModule({
@@ -48,6 +61,8 @@ import { LoginComponent } from './login/login.component';
     MatCardModule,
     MatIconModule,
     CarouselModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireAuthModule,
     BrowserAnimationsModule // Browser Animation, Must for pop-up menu
   ],
   providers: [],

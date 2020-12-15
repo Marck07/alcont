@@ -32,7 +32,6 @@
               "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "node_modules/ionicons/dist/scss/ionicons.scss",
               "src/styles.scss"
-
             ],
             "scripts": []
           },
@@ -127,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "alcont"
+    }
+  },
+  "defaultProject": "alcont",
+  "cli": {
+    "analytics": "9a8d0182-3647-4007-a176-2931e6d99dab"
+  }
 }
