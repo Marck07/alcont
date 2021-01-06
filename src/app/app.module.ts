@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { AvisoPrivacidadComponent } from './aviso-privacidad/aviso-privacidad.co
 import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
+import { ArticleDialogComponent } from './home/article-dialog/article-dialog.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.co
     AvisoPrivacidadComponent,
     ContactoComponent,
     AboutUsComponent,
-    FrequentlyAskedComponent
+    FrequentlyAskedComponent,
+    ArticleDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.co
     MatCardModule,
     MatIconModule,
     CarouselModule,
+    MatDialogModule,
     BrowserAnimationsModule // Browser Animation, Must for pop-up menu
   ],
   providers: [],
