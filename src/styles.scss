@@ -102,6 +102,9 @@ p {
 .h600{
   height: 600px;
 }
+.h620{
+  height: 620px;
+}
 // Font sizes
 .fSize40 {
   font-size: 40px;
@@ -298,7 +301,9 @@ svg.material-icons:not(:last-child) {
   transition: all 0.2s ease-in-out;
   line-height: 24px;
 }
-
+.mat-article-card {
+      box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0), 0px 1px 0px 0px rgba(0, 0, 0, 0.08), -1px -2px 9px 4px rgba(0, 0, 0, 0.12)!important;
+}
 .card-container .card:not(:last-child) {
   margin-right: 0;
 }
@@ -339,6 +344,17 @@ svg.material-icons:not(:last-child) {
   color: rgba(105, 114, 123, 0.77);
   font-weight: 500;
   letter-spacing: 1px;
+  display: -webkit-box;
+}
+.card-article-info-text{
+  color: rgba(105, 114, 123, 0.77);
+  font-weight: 500;
+  text-align: justify;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 svg#rocket {
   width: 80px;
