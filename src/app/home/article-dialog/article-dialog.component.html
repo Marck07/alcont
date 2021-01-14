@@ -1,9 +1,10 @@
-<div class="H100">
-  <!-- TITLE -->
-  <div align="center">
-    <h1 class="article-modal-title">{{article.title}}</h1>
-  </div>
-  <!-- body -->
+<!-- TITLE -->
+<div align="center"  mat-dialog-title>
+  <h1 class="article-modal-title">{{article.title}}</h1>
+</div>
+
+<!-- body -->
+<mat-dialog-content>
   <div class="grid">
     <div class="col-7_md-5_sm-12 article-modal-text">
       {{article.text}}
@@ -13,8 +14,11 @@
       <img class="article-modal-img" src="../../assets/img/articulo1.jpeg">
     </div>
   </div>
+</mat-dialog-content>
 
-  <div class="grid-center mar28">
+<!-- footer -->
+<div mat-dialog-actions>
+  <div class="grid-center mar28 W100">
     <div class="col-4_sm-12 cHand close-modal-button" align="center" (click)="close()">
       Cerrar
     </div>

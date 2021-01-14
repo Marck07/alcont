@@ -75,8 +75,6 @@ export class HomeComponent implements OnInit {
 
   showArticle() {
     let dialogRef = this.dialog.open(ArticleDialogComponent, {
-      height: '70%',
-      width:  '100%',
       data: this.articleCard
     })
   }
