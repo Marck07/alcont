@@ -47,8 +47,11 @@
               </div>
               <div class="">
                 <p class="card-info-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                  Es relevante para nuestra empresa que el equipo de trabajo
+                  se encuentre en capacitación constante tanto en el área técnica
+                  como en actividades que contribuyan a su desarrollo personal,
+                  en un entorno tan dinámico como la industria es necesario impulsar
+                  a nuestro personal a ser líderes y aportar conocimiento en cada una de sus áreas.
                 </p>
               </div>
             </mat-card>
@@ -63,10 +66,10 @@
               </div>
               <div class="">
                 <p class="card-info-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
+                  Nuestra aportación para prevenir y limitar los posibles
+                  riesgos en el contagio COVID-19 tomamos medidas de seguridad
+                  como el uso de caretas, cubrebocas y otorgamos gel antibacterial
+                  a nuestro equipo de trabajo durante las entregas de material y visitas a planta.
                 </p>
               </div>
             </mat-card>
@@ -81,10 +84,10 @@
               </div>
               <div class="">
                 <p class="card-info-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla. Ut iaculis justo id semper suscipit.
-                  mio pesto Sic Mundus Creatus Est dolor sit amet, consectetur adipiscing elit. Morbi sit amet ultrices turpis. Vestibulum
-                  pellentesque nisl quis metus pellentesque, sed efficitur est fringilla
+                  Siempre estamos potenciando diferentes dinámicas en el que las
+                  interacciones y la confianza entre los integrantes de nuestra empresa,
+                  sean el motor de la compañía. Estos puntos que trabajamos de forma interna,
+                  nos permiten una mayor calidad de todas actividades que se realizan en cada una de las áreas.
                 </p>
               </div>
             </mat-card>
@@ -110,38 +113,58 @@
         </div>
 
         <div class="grid tmar60 sidePads50" #noticias>
-          <div class="col-6">
-            <mat-card class="h600">
+          <div class="col-6_md-8_sm-10_xs-12 h620 bmar55">
+            <mat-card class="h620 bmar55 mat-article-card">
               <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                <mat-card-title>Aplicación Sensor Ultrasónico en Tanque.</mat-card-title>
+                <mat-card-subtitle>Patricia de Luna Bertaud</mat-card-subtitle>
               </mat-card-header>
-              <img mat-card-image src="https://cdn.pixabay.com/photo/2015/07/08/03/13/forklift-835340_960_720.jpg" alt="Photo of a Shiba Inu">
+              <img mat-card-image style="max-height: 325px!important;" src="../assets/img/articulo1.jpeg" alt="Photo of a Shiba Inu">
               <mat-card-content>
-                <p class="card-info-text">
-                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                  bred for hunting.
+                <p class="card-article-info-text">
+                  {{articleCard.text}}
                 </p>
               </mat-card-content>
+              <mat-card-actions style="padding-left:10px; padding-right: 10px;">
+                <div class="grid" align="center">
+                    <div class="col-3_md-6_sm-12 cHand"  data-push-left="off-9_md-6_sm-0" align="center" style="padding: 8px 5px 8px 5px;
+                                              color: #27a6dc;
+                                              border: 1px solid #27a6dc;
+                                              border-radius: 6px;" (click)="showArticle()">Ver Mas</div>
+                </div>
+              </mat-card-actions>
             </mat-card>
           </div>
-          <div class="col-6">
-            <mat-card class="h600">
+          <div class="col-6_md-8_sm-10_xs-12 h620 bmar55">
+            <mat-card class="h620 bmar55 mat-article-card">
               <mat-card-header>
                 <div mat-card-avatar class="example-header-image"></div>
-                <mat-card-title>Shiba Inu</mat-card-title>
-                <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                <mat-card-title>Aplicación Sensor Ultrasónico en Tanque.</mat-card-title>
+                <mat-card-subtitle>Patricia de Luna Bertaud</mat-card-subtitle>
               </mat-card-header>
-              <img mat-card-image src="https://cdn.pixabay.com/photo/2014/09/13/21/46/drill-444493_960_720.jpg" alt="Photo of a Shiba Inu">
+              <img mat-card-image style="max-height: 325px!important;" src="../assets/img/articulo1.jpeg" alt="Photo of a Shiba Inu">
               <mat-card-content>
-                <p class="card-info-text">
-                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                  A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                  bred for hunting.
+                <p class="card-article-info-text">
+                  El tanque de aceite está equipado con un sensor ultrasónico inteligente Pepperl +
+                  Fuchs que monitorea continuamente el nivel de llenado del tanque y transfiere
+                  los datos al sistema de control de nivel superior a través de IO-Link.
+                  En base a esta retroalimentación de posición, las válvulas pueden mantener
+                  la presión dentro de una décima parte de una barra y la posición con precisión de µm.
+                  Ya sea que la tecnología de sensores Pepperl + Fuchs ya esté integrada en la planta o
+                  necesite agregarse como una solución de actualización, las ventajas para los usuarios son claras:
+                  las válvulas digitales pueden aumentar considerablemente la confiabilidad y reducir el consumo de energía,
+                  y por lo tanto han elevado el listón para la planta hidráulica campo.
                 </p>
               </mat-card-content>
+              <mat-card-actions style="padding-left:10px; padding-right: 10px;">
+                <div class="grid" align="center">
+                    <div class="col-3_md-6_sm-12 cHand"  data-push-left="off-9_md-6_sm-0" align="center" style="padding: 8px 5px 8px 5px;
+                                              color: #27a6dc;
+                                              border: 1px solid #27a6dc;
+                                              border-radius: 6px;">Ver Mas</div>
+                </div>
+              </mat-card-actions>
             </mat-card>
           </div>
         </div>

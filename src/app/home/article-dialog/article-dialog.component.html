@@ -1,0 +1,26 @@
+<!-- TITLE -->
+<div align="center"  mat-dialog-title>
+  <h1 class="article-modal-title">{{article.title}}</h1>
+</div>
+
+<!-- body -->
+<mat-dialog-content>
+  <div class="grid">
+    <div class="col-7_md-5_sm-12 article-modal-text">
+      {{article.text}}
+      <br><span class="article-author">= {{article.author}} =</span>
+    </div>
+    <div class="col-5_sm-12">
+      <img class="article-modal-img" src="../../assets/img/articulo1.jpeg">
+    </div>
+  </div>
+</mat-dialog-content>
+
+<!-- footer -->
+<div mat-dialog-actions>
+  <div class="grid-center mar28 W100">
+    <div class="col-4_sm-12 cHand close-modal-button" align="center" (click)="close()">
+      Cerrar
+    </div>
+  </div>
+</div>
