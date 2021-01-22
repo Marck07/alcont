@@ -1,0 +1,27 @@
+.brands-container {
+  padding: 60px;
+  background: #FFF;
+  color: #000000;
+  padding: 60px 150px 60px 150px;
+}
+
+.brand-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.23),
+              0px 1px 1px 0px rgba(109, 100, 100, 0.34),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.38);
+  min-height: 410px;
+  max-height: 410px;
+  border-left: 6px solid #149fb5;
+  // border-bottom: 6px solid #149fb5;
+  // border-top: 6px solid #149fb5;
+  // border-right: 6px solid #149fb5;
+}
+
+.brand-card-img {
+  min-width: 210px!important;
+  min-height: 210px!important;
+  max-width: 210px!important;
+  max-height: 210px!important;
+}

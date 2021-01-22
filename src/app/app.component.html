@@ -71,8 +71,8 @@
         <button (click)="goContact()" class="col option-header">
                 Contacto
         </button>
-        <button (click)="goQuestions()" class="col option-header">
-                Preguntas Frecuentes
+        <button (click)="goPrivacy()" class="col option-header">
+                Aviso de Privacidad
         </button>
       </div>
       <div class="col-3 pad0"></div>
@@ -82,13 +82,13 @@
   <router-outlet (activate)="onActivate($event)"></router-outlet>
   <!-- Footer -->
   <div class="page-footer pad30">
-    <div class="container">
+    <div class="">
       <div class="grid">
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Contacto</h3>
           <div class="w170">
-            <span>pdeluna@alcont.com.mx</span>
-            <span>tel (81) 83318055</span>
+            <span>pdeluna@alcont.com.mx</span><br>
+            <span>tel (81) 83318055</span><br>
             <span>(81) 83512931 </span>
           </div>
         </div>
@@ -96,7 +96,7 @@
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Dirección</h3>
           <div class="w170">
-            <span>Col. Hidalgo Monterrey, Nuevo León</span>
+            <span>Privada Oswaldo Sánchez, Col. Hidalgo, 64290 Monterrey N.L.</span>
           </div>
         </div>
 
@@ -139,7 +139,7 @@
     </div>
 
     <section class="divider">
-      <div class="container">
+      <div class="">
         <div class="grid">
           <!-- <div class="col-1 bpad0">
             <a href="https://www.facebook.com/Alcontdemexico" target="_blank">

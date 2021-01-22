@@ -255,6 +255,12 @@ p {
 .parent-container {
   color: white;
   font-weight: 600;
+  // position: relative;
+  // min-height: 100vh;
+}
+
+.container {
+  min-height: 80vh;
 }
 
 .parent-container img {
