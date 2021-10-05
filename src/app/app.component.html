@@ -7,64 +7,10 @@
           <h2 class="home-menu-title">ALCONT DE MÉXICO</h2>
       </div>
     	<div class="grid col-6 inline-flex pad0">
-        <button class="fWeightNormal col option-header" mat-button [matMenuTriggerFor]="marcas">
+
+        <button (click)="goBrands()" class="col option-header">
                 Marcas
         </button>
-
-        <!-- Inicio menú de marcas -->
-        <mat-menu #marcas="matMenu">
-          <button mat-menu-item [matMenuTriggerFor]="pepperl">PEPPERL + FUCHS</button>
-          <button mat-menu-item >SPRECHER SCHUH</button>
-          <button mat-menu-item [matMenuTriggerFor]="weidmuller">WEIDMÜLLER</button>
-          <button mat-menu-item [matMenuTriggerFor]="eaton">EATON MOELLER</button>
-          <button mat-menu-item [matMenuTriggerFor]="norgren">NORGREN</button>
-        </mat-menu>
-        <!-- Fin menú de marcas -->
-        <!-- Inicio sub menú pepperl-->
-        <mat-menu #pepperl="matMenu">
-          <button mat-menu-item >Sensor Inductivo</button>
-          <button mat-menu-item >Sensores Ultrasónicos</button>
-          <button mat-menu-item >Sensor Fotoélectrico</button>
-          <button mat-menu-item>Sensor Retroreflectivo</button>
-          <button mat-menu-item>Sensor Óptico</button>
-        </mat-menu>
-        <!-- Fin sub menú pepperl -->
-        <!-- Inicio sub menú weidmuller-->
-        <mat-menu #weidmuller="matMenu">
-          <button mat-menu-item >Clema de paso (Tres Niveles)</button>
-          <button mat-menu-item >Clema Portafusible</button>
-          <button mat-menu-item >Clema de Tierra</button>
-          <button mat-menu-item>Clema de Paso</button>
-          <button mat-menu-item>Clema Doble Piso</button>
-          <button mat-menu-item>Tope para Clema</button>
-          <button mat-menu-item>Etiquetas</button>
-          <button mat-menu-item>Portaetiqueta</button>
-          <button mat-menu-item>Accesorios</button>
-          <button mat-menu-item>Clemas (Bloques Terminales)</button>
-          <button mat-menu-item>Conectividad Électrica</button>
-          <button mat-menu-item>Terminales</button>
-          <button mat-menu-item>Herramientas</button>
-        </mat-menu>
-        <!-- Fin sub menú weidmuller -->
-        <!-- Inicio sub menú eaton-->
-        <mat-menu #eaton="matMenu">
-          <button mat-menu-item >Botones</button>
-          <button mat-menu-item >Switch</button>
-          <button mat-menu-item >Contactores</button>
-          <button mat-menu-item>Relevadores</button>
-          <button mat-menu-item>Micros</button>
-          <button mat-menu-item>Interruptores</button>
-          <button mat-menu-item>LED's</button>
-        </mat-menu>
-        <!-- Fin sub menú eaton -->
-        <!-- Inicio sub menú norgren-->
-        <mat-menu #norgren="matMenu">
-          <button mat-menu-item >Conectores</button>
-          <button mat-menu-item >Filtros</button>
-          <button mat-menu-item >Reguladores</button>
-          <button mat-menu-item>Lubricadores</button>
-        </mat-menu>
-        <!-- Fin sub menú norgren -->
         <button (click)="goAboutus()" class="col option-header">
                 Nosotros
         </button>

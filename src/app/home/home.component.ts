@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
 
   customOptions: any = {
    loop: true,
-   autoplay: false,
+   autoplay: true,
    mouseDrag: true,
    touchDrag: true,
    pullDrag: true,
