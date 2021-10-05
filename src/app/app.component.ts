@@ -18,7 +18,7 @@ export class AppComponent {
       this.tawk();
     }
     onActivate(event) {
-      window.scroll(0,0);      
+      window.scroll(0,0);
   }
 
   tawk() {
@@ -54,6 +54,11 @@ export class AppComponent {
   goHome() {
      this.router.navigate(['']);
   }
+
+  goBrands() {
+     this.router.navigate(['/marcas']);
+  }
+
   goAboutus() {
      this.router.navigate(['nosotros']);
   }

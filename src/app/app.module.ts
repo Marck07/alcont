@@ -22,6 +22,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FrequentlyAskedComponent } from './frequently-asked/frequently-asked.component';
 import { ArticleDialogComponent } from './home/article-dialog/article-dialog.component';
+import { BrandsComponent } from './brands/brands.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ArticleDialogComponent } from './home/article-dialog/article-dialog.com
     ContactoComponent,
     AboutUsComponent,
     FrequentlyAskedComponent,
-    ArticleDialogComponent
+    ArticleDialogComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,

@@ -7,72 +7,18 @@
           <h2 class="home-menu-title">ALCONT DE MÉXICO</h2>
       </div>
     	<div class="grid col-6 inline-flex pad0">
-        <button class="fWeightNormal col option-header" mat-button [matMenuTriggerFor]="marcas">
+
+        <button (click)="goBrands()" class="col option-header">
                 Marcas
         </button>
-
-        <!-- Inicio menú de marcas -->
-        <mat-menu #marcas="matMenu">
-          <button mat-menu-item [matMenuTriggerFor]="pepperl">PEPPERL + FUCHS</button>
-          <button mat-menu-item >SPRECHER SCHUH</button>
-          <button mat-menu-item [matMenuTriggerFor]="weidmuller">WEIDMÜLLER</button>
-          <button mat-menu-item [matMenuTriggerFor]="eaton">EATON MOELLER</button>
-          <button mat-menu-item [matMenuTriggerFor]="norgren">NORGREN</button>
-        </mat-menu>
-        <!-- Fin menú de marcas -->
-        <!-- Inicio sub menú pepperl-->
-        <mat-menu #pepperl="matMenu">
-          <button mat-menu-item >Sensor Inductivo</button>
-          <button mat-menu-item >Sensores Ultrasónicos</button>
-          <button mat-menu-item >Sensor Fotoélectrico</button>
-          <button mat-menu-item>Sensor Retroreflectivo</button>
-          <button mat-menu-item>Sensor Óptico</button>
-        </mat-menu>
-        <!-- Fin sub menú pepperl -->
-        <!-- Inicio sub menú weidmuller-->
-        <mat-menu #weidmuller="matMenu">
-          <button mat-menu-item >Clema de paso (Tres Niveles)</button>
-          <button mat-menu-item >Clema Portafusible</button>
-          <button mat-menu-item >Clema de Tierra</button>
-          <button mat-menu-item>Clema de Paso</button>
-          <button mat-menu-item>Clema Doble Piso</button>
-          <button mat-menu-item>Tope para Clema</button>
-          <button mat-menu-item>Etiquetas</button>
-          <button mat-menu-item>Portaetiqueta</button>
-          <button mat-menu-item>Accesorios</button>
-          <button mat-menu-item>Clemas (Bloques Terminales)</button>
-          <button mat-menu-item>Conectividad Électrica</button>
-          <button mat-menu-item>Terminales</button>
-          <button mat-menu-item>Herramientas</button>
-        </mat-menu>
-        <!-- Fin sub menú weidmuller -->
-        <!-- Inicio sub menú eaton-->
-        <mat-menu #eaton="matMenu">
-          <button mat-menu-item >Botones</button>
-          <button mat-menu-item >Switch</button>
-          <button mat-menu-item >Contactores</button>
-          <button mat-menu-item>Relevadores</button>
-          <button mat-menu-item>Micros</button>
-          <button mat-menu-item>Interruptores</button>
-          <button mat-menu-item>LED's</button>
-        </mat-menu>
-        <!-- Fin sub menú eaton -->
-        <!-- Inicio sub menú norgren-->
-        <mat-menu #norgren="matMenu">
-          <button mat-menu-item >Conectores</button>
-          <button mat-menu-item >Filtros</button>
-          <button mat-menu-item >Reguladores</button>
-          <button mat-menu-item>Lubricadores</button>
-        </mat-menu>
-        <!-- Fin sub menú norgren -->
         <button (click)="goAboutus()" class="col option-header">
                 Nosotros
         </button>
         <button (click)="goContact()" class="col option-header">
                 Contacto
         </button>
-        <button (click)="goQuestions()" class="col option-header">
-                Preguntas Frecuentes
+        <button (click)="goPrivacy()" class="col option-header">
+                Aviso de Privacidad
         </button>
       </div>
       <div class="col-3 pad0"></div>
@@ -82,13 +28,13 @@
   <router-outlet (activate)="onActivate($event)"></router-outlet>
   <!-- Footer -->
   <div class="page-footer pad30">
-    <div class="container">
+    <div class="">
       <div class="grid">
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Contacto</h3>
           <div class="w170">
-            <span>pdeluna@alcont.com.mx</span>
-            <span>tel (81) 83318055</span>
+            <span>pdeluna@alcont.com.mx</span><br>
+            <span>tel (81) 83318055</span><br>
             <span>(81) 83512931 </span>
           </div>
         </div>
@@ -96,7 +42,7 @@
         <div class="col-3_md-4_sm-6_xs-12">
           <h3 class="white-text">Dirección</h3>
           <div class="w170">
-            <span>Col. Hidalgo Monterrey, Nuevo León</span>
+            <span>Privada Oswaldo Sánchez, Col. Hidalgo, 64290 Monterrey N.L.</span>
           </div>
         </div>
 
@@ -139,7 +85,7 @@
     </div>
 
     <section class="divider">
-      <div class="container">
+      <div class="">
         <div class="grid">
           <!-- <div class="col-1 bpad0">
             <a href="https://www.facebook.com/Alcontdemexico" target="_blank">
