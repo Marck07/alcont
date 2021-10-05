@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
    touchDrag: true,
    pullDrag: true,
    dots: true,
-   navSpeed: 700,
+   navSpeed: 600,
    navText: ['<', '>'],
    responsive: {
      0: {
