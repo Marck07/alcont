@@ -87,7 +87,15 @@ p {
   width: 100%!important;
 }
 
+.W60 {
+  width: 60%!important;
+}
+
 // Percent Height's
+.H80 {
+  height: 80%!important;
+}
+
 .H100 {
   height: 100%!important;
 }
@@ -96,6 +104,10 @@ p {
   width: 170px!important;
 }
 // px height's
+.h360 {
+  height: 360px!important;
+}
+
 .h400{
   height: 400px;
 }
@@ -104,6 +116,12 @@ p {
 }
 .h620{
   height: 620px;
+}
+
+// max s Widths
+
+.maxW650 {
+  max-width: 650px!important;
 }
 // Font sizes
 .fSize40 {
@@ -136,6 +154,9 @@ p {
   margin: 0!important;
 }
 
+.mar20{
+  margin: 20px!important;
+}
 .mar28 {
   margin: 28px!important;
 }
@@ -627,9 +648,6 @@ owl-stage div {
   display: none!important;
 }
 
-// .example-card {
-//   max-width: 400px;
-// }
 .mat-card-image {
     width: calc(100% + 32px);
     margin: 0 -16px 16px -16px!important;
@@ -638,3 +656,6 @@ owl-stage div {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

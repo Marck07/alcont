@@ -62,6 +62,9 @@
 }
 
 .chatOpen {
+  .form-container {
+    border-radius: 24px!important;
+  }
   height: 480px;
   opacity: 1;
   transition: height 1s, opacity 1.5s;
